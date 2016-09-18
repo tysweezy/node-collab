@@ -7,15 +7,29 @@
   </head>
   <body>
 
+<header id="app-header">
+  <button type="button" id="clear-board">Clear Board</button>
+</header>
 
   <!-- whiteboard -->
-  <canvas id="whiteboard" width="300" height="300"></canvas>
+  <canvas id="whiteboard" width="1900" height="1000"></canvas>
 
+<div class="chat-bar">
+
+  <strong>Chat Area</strong>
   <form class="chat">
     <input type="text" id="message">
 
     <button type="submit">Send</button>
   </form>
+  <br>
+  <hr>
+
+  <div id="conversation">
+    
+  </div>
+
+</div>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/1.4.8/socket.io.min.js"></script>
   <script src="/js/main.js"></script>
